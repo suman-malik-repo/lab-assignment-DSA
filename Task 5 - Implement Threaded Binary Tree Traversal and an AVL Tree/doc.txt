@@ -1,0 +1,45 @@
+Task 5: Implement Threaded Binary Tree Traversal and an AVL Tree
+This program covers:
+
+Threaded Binary Tree (TBT):
+
+Threaded binary trees use pointers to traverse in order without recursion or a stack.
+Left and right pointers are used as "threads" when a node doesn't have a left or right child.
+AVL Tree:
+
+An AVL tree is a self-balancing binary search tree.
+It ensures the height difference (balance factor) of subtrees is not more than 1 after insertion.
+
+-----------------------------------------
+code.c 
+-----------------------------------------
+
+Explanation
+Threaded Binary Tree:
+
+Insertion: Adds nodes to the binary tree while maintaining threads for efficient traversal.
+Inorder Traversal: Traverses the tree in order without recursion or stacks.
+AVL Tree:
+
+Insertion: Ensures the tree remains balanced after every insertion.
+Rotations: Performs left or right rotations to maintain balance.
+Inorder Traversal: Displays the elements in sorted order.
+
+-------------------------------------------------
+Sample Output
+Insert and Traverse Threaded Binary Tree:
+
+Enter value to insert into Threaded Binary Tree: 10
+Enter value to insert into Threaded Binary Tree: 5
+Enter value to insert into Threaded Binary Tree: 15
+Inorder Traversal of Threaded Binary Tree: 5 10 15
+
+--------------------------------------------------
+Insert and Traverse AVL Tree:
+
+Enter value to insert into AVL Tree: 10
+Enter value to insert into AVL Tree: 20
+Enter value to insert into AVL Tree: 15
+Inorder Traversal of AVL Tree: 10 15 20
+
+

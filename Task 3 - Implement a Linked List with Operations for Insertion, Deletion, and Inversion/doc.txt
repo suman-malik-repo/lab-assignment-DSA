@@ -1,0 +1,89 @@
+Task 3: Implement a Linked List with Operations for Insertion, Deletion, and Inversion
+This program demonstrates how to implement a linked list in C and perform the following operations:
+
+Insert elements into the linked list.
+Delete elements from the linked list.
+Invert (reverse) the linked list.
+
+----------------------------
+code.c 
+----------------------------
+
+Explanation
+Node Structure:
+
+Each node contains two parts:
+data: Stores the value of the node.
+next: A pointer to the next node in the list.
+Insert Operation:
+
+Adds a new node with the given value to the end of the list.
+If the list is empty, the new node becomes the head.
+Delete Operation:
+
+Removes a node with the specified value from the list.
+Handles edge cases like an empty list or a value not found in the list.
+Invert Operation:
+
+Reverses the order of nodes in the linked list.
+Uses three pointers (prev, current, next) to traverse and update links.
+Display Operation:
+
+Prints all elements of the linked list from the head to the end.
+Main Function:
+
+Provides a menu to perform operations on the linked list.
+Handles user input and calls the appropriate functions.
+
+------------------------------------------
+Sample Output
+
+Menu:
+1. Insert Element
+2. Delete Element
+3. Invert List
+4. Display List
+5. Exit
+Enter your choice: 1
+Enter value to insert: 10
+Inserted 10 into the list.
+
+Enter your choice: 1
+Enter value to insert: 20
+Inserted 20 into the list.
+
+Enter your choice: 4
+Linked List: 10 -> 20 -> NULL
+
+----------------------------------------
+Delete Operation:
+
+Enter your choice: 2
+Enter value to delete: 10
+Deleted 10 from the list.
+
+Enter your choice: 4
+Linked List: 20 -> NULL
+
+--------------------------------------------
+Invert Operation:
+
+Enter your choice: 1
+Enter value to insert: 30
+Inserted 30 into the list.
+
+Enter your choice: 4
+Linked List: 20 -> 30 -> NULL
+
+Enter your choice: 3
+List inverted successfully.
+
+Enter your choice: 4
+Linked List: 30 -> 20 -> NULL
+
+-----------------------------------------
+Key Points
+
+The linked list dynamically allocates memory for nodes using malloc.
+It handles edge cases like inserting into or deleting from an empty list.
+The program efficiently implements the inversion of the linked list using iterative traversal.
